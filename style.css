@@ -1,0 +1,60 @@
+body {
+  text-align: center;
+  font-family: 'Times New Roman', cursive;
+  background-color: #FFD1DC; /* Rosa pastel */
+  padding: 50px;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #FF69B4; /* Rosa */
+  color: white;
+}
+
+#gifContainer {
+  display: block;  /* Mostrar el primer gif inicialmente */
+  margin-top: 20px;
+}
+
+#messageContainer {
+  display: none; /* Ocultar mensaje hasta que se haga clic en "Sí" */
+  font-size: 24px;
+  color: #FF69B4;
+  font-family: cursive;
+  margin-top: 20px;
+}
+
+#extraGifContainer {
+  display: none; /* Oculto por defecto */
+  margin-top: 20px;
+}
+
+.fullscreen-gif {
+  width: 80%; /* Ajustamos el tamaño del segundo gif para que sea más pequeño que el de pantalla completa */
+  max-width: 600px;
+}
+
+#mainTitle {
+  color: black; /* Color inicial */
+}
+
+#mainTitle.changed {
+  color: #FF1493; /* Color rosa fuerte */
+}

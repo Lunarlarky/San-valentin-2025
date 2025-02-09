@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Valentín</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Título -->
+    <h1 id="mainTitle">¿Quieres ser mi San Valentín?</h1>
+
+    <!-- Contenedor del primer gif -->
+    <div id="gifContainer">
+        <img id="valentineGif" src="https://gifdb.com/images/high/adorable-baby-spider-monkey-observing-xjdl4hhex2uen6ly.webp" alt="¡Felicidades!">
+    </div>
+
+    <!-- Contenedor de los botones -->
+    <div class="buttons">
+        <button id="yesBtn" onclick="showGif()">Sí</button>
+        <button id="noBtn" onclick="growYesButton()">No</button>
+    </div>
+
+    <!-- Contenedor para el mensaje que aparecerá después -->
+    <div id="messageContainer" style="display: none;">
+        <!-- El mensaje se moverá a h1, por lo que esta parte puede ser eliminada -->
+    </div>
+
+    <!-- Contenedor del segundo gif -->
+    <div id="extraGifContainer" style="display: none;">
+        <img id="extraGif" src="https://gifdb.com/images/high/two-monkeys-kissing-each-other-zr0kok3l51431psv.webp" alt="¡Más amor!" class="fullscreen-gif">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
